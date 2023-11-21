@@ -70,14 +70,16 @@ height: 110px;
 float: right;
 }
 .headright small{
-float: right;
+float: center;
 font-size: 16px;
 color: #fff;
-}
+  }
+
 .headright label{
-float: right;
+float: center;
 font-size: 18px;
 color: yellow;
+  
 }
 .navbg{
 width: 1000px;
@@ -203,4 +205,102 @@ float: center;
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+}
+/* For screens smaller than 767px */
+@media only screen and (max-width: 767px) {
+  .Container,
+  .headercon,
+  .logo,
+  .headright,
+  .navbg,
+  .flashcon,
+  .midboxcon,
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    background-size: contain;
+    float: none;
+  }
+  
+  .headright {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    float: none;
+    text-align: center; /* Add this line */
+  }
+  
+  .headright small {
+   /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  }
+  
+  .headright label {
+   /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  }
+  
+  .nav_inside ul li:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  }
+  
+  .nav_inside ul {
+    height: auto;
+    font-size: 16px;
+    text-align: center; /* Center-align the text */
+  }
+  
+  ..nav_inside ul li a:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    padding: 0 10px;
+    margin: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Adjust column width for smaller screens */
+  .column {
+    width: 100%; /* Make columns occupy full width on smaller screens */
+    margin-bottom: 15px;
+    padding: 15px; /* Adjust padding for spacing */
+    box-sizing: border-box;
+
+  /* Additional styles for the footer */
+  .footer {
+    min-height: 100%; /* Adjust this as needed */
+    padding: 15px 2px;
+  }
+
+  .social-icon__link {
+    font-size: 1.5rem; /* Decrease the font size for smaller screens */
+  }
+
+  .menu__link {
+    font-size: 1rem; /* Decrease the font size for smaller screens */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Decrease the font size for smaller screens */
+  }
 }
