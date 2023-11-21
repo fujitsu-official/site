@@ -70,12 +70,12 @@ height: 110px;
 float: right;
 }
 .headright small{
-float: right;
+float: center;
 font-size: 16px;
 color: #fff;
 }
 .headright label{
-float: right;
+float: center;
 font-size: 18px;
 color: yellow;
 }
@@ -144,12 +144,10 @@ float: right;
 background: url("../images/i3.jpg");
 }
 .footer {
-float: center;
   position: relative;
   width: 100%;
   background: url("../images/bcg.jpg");
-  background-repeat: no-repeat;
-  min-height: 150%;
+  min-height: 50px;
   padding: 15px 2px;
   display: flex;
   justify-content: center;
@@ -246,10 +244,146 @@ float: center;
 .service-wrap a:hover {
   background-color: #0056b3;
 }
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-  .col-lg-4, .col-md-6 {
-    flex-basis: 100%;
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
+  
+  .headercon,
+  .logo,
+  .headright,
+  .navbg,
+  .midboxcon,
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    background-size: contain;
+    float: none;
+  }
+  
+  .headright {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    float: none;
+    text-align: center; /* Add this line */
+  }
+  
+  .headright small {
+     /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  
+  .headright label {
+     /* float: center; Remove this line */
+    font-size: 16px;
+    float:center;
+  }
+
+  
+  .nav_inside ul li:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  }
+  
+  .nav_inside ul {
+    height: auto;
+    font-size: 16px;
+    text-align: center; /* Center-align the text */
+  }
+  
+  ..nav_inside ul li a:hover {
+    text-align: center; /* Center-align the text */
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    padding: 0 10px;
+    margin: 0;
+  }
+  .flashcon:hover {
+    background: blue; /* Change background color on hover */
+    transform: scale(1.1); /* Example: Increase size on hover */
+    transition: background 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+  
+  /* Remove styles for .flashcon */
+  /* .flashcon {
+    margin: 0 auto;
+    width: 1000px;
+    height: 350;
+    background: red;
+  } */
+  
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    max-width: none;
+    height: 200px;
+    float: none;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Adjust negative margin for gutters */
+  }
+
+  .column {
+    flex: 0 0 50%; /* Show 2 columns in a row for screens below 768px */
+    padding: 0 10px; /* Adjust padding */
+  }
+  
+    .column {
+      flex: 0 0 100%; /* Show 1 column in a row for smaller screens */
+      padding: 0; /* Reset padding */
+    }
+    footer {
+  /* ... */
+  padding: 15px 2px;
+  /* ... */
+}
+
+.social-icon,
+.menu {
+  /* ... */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .social-icon,
+  .menu {
+    flex-direction: column;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    margin: 5px 0;
+  }
+  .footer {
+  /* ... other properties ... */
+  height: auto; /* or a fixed height suitable for smaller screens */
+  min-height: initial; /* Reset the minimum height */
+}
 }
