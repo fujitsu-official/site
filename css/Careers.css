@@ -88,15 +88,17 @@ height: 110px;
 float: right;
 }
 .headright small{
-float: right;
-font-size: 16px;
-color: #fff;
-}
+/* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+
 .headright label{
-float: right;
-font-size: 18px;
-color: yellow;
-}
+/* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+
 .navbg{
 width: 1000px;
 background: url("../images/nabg.jpg") repeat-x scroll center top;
@@ -159,7 +161,81 @@ margin: 0 auto;
 width: 334px;
 height: 215px;
 float: right;
-background: url("../images/f3.jpg");
+background: url("../images/mb3.jpg");
 }
-//about page
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px; /* Adjust the padding for smaller screens */
+    box-sizing: border-box;
+  }
 
+  .headercon,
+  .logo,
+  .headright,
+  .navbg,
+  .flashcon,
+  .midboxcon {
+    width: 100%;
+    height: auto;
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    padding-left: 10px;
+    background-size: contain;
+    float: none;
+  }
+
+  .headright {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    float: none;
+    text-align: center; /* Add this line */
+  }
+
+  .headright small,
+  .headright label {
+    float: right;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .navbg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .nav_inside ul {
+    height: auto;
+    font-size: 16px;
+    text-align: center; /* Center-align the text */
+  }
+
+  .nav_inside ul li {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    margin: 0;
+  }
+
+  .flashcon,
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  /* Adjust heights for midboxes */
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    height:180px; /* Change the height as per design */
+  }
+}
