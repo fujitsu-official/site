@@ -30,12 +30,12 @@ height: 110px;
 float: right;
 }
 .headright small{
-float: right;
+float: center;
 font-size: 16px;
 color: #fff;
-}
+  }
 .headright label{
-float: right;
+float: center;
 font-size: 18px;
 color: yellow;
 }
@@ -193,7 +193,7 @@ textarea {
 .submit-btn {
     float:center;
      margin-bottom: 15px;
-    padding: 7px 35px;
+    padding: 7px 30px;
     border-radius: 60px;
     display: inline-block;
     background-color: #4b8cfb;
@@ -211,6 +211,7 @@ textarea {
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
+
 
 @media (max-width: 768px) {
     .submit-btn {
@@ -289,7 +290,115 @@ input[type=checkbox]:checked + label {
   font-size: 1rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 767px) {
+ .container {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .headercon,
+  .logo,
+  .headright,
+  .navbg,
+  .midboxcon,
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    background-size: contain;
+    float: none;
+  }
+  
+  .headright {
+     max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    float: none;
+    text-align: center; /* Add this line */
+  }
+  
+  .headright small {
+   /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  }
+  
+  .headright label {
+    /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  }
+  
+  .nav_inside ul li:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  }
+  
+  .nav_inside ul {
+    height: auto;
+    font-size: 16px;
+    text-align: center; /* Center-align the text */
+  }
+  
+  ..nav_inside ul li a:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    padding: 0 10px;
+    margin: 0;
+  }
+  .flashcon:hover {
+    background: blue; /* Change background color on hover */
+    transform: scale(1.1); /* Example: Increase size on hover */
+    transition: background 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+  
+  /* Remove styles for .flashcon */
+  /* .flashcon {
+    margin: 0 auto;
+    width: 1000px;
+    height: 350;
+    background: red;
+  } */
+  
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    max-width: none;
+    height: 200px;
+    float: none;
+  }
 
+ .submit-btn {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    text-align: center; /* Align the button text to the center */
+  }
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+              0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+  }
 
 
 
